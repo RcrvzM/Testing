@@ -8,7 +8,7 @@ st.write(""" #  RCRUZ....My first app hello world!*""")
 @st.cache_data
 def get_UN_data():
     AWS_BUCKET_URL = "https://streamlit-demo-data.s3-us-west-2.amazonaws.com"
-    df = pd.read_csv(AWS_BUCKET_URL + "/agri.csv.gz")
+    df = pd.read_csv(AWS_BUCKET_URL + "Salary_Data.csv.gz")
     return df.set_index("Region")
 
 try:
